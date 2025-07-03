@@ -1,0 +1,79 @@
+.InfoWidget {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 0;
+  margin-bottom: 24px;
+  max-width: 1100px;
+  height: 38vh;
+  min-height: 220px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropIn 0.5s cubic-bezier(.23,1.02,.53,.97) forwards;
+}
+
+@keyframes dropIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.InfoWidget.reverse {
+  flex-direction: row-reverse;
+}
+
+.InfoWidget-photo {
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0;
+}
+
+.InfoWidget.reverse .InfoWidget-photo {
+  border-radius: 8px;
+}
+
+.InfoWidget p {
+  flex: 1;
+  margin: 0;
+  padding: 40px 36px;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', 'Inter', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: #23272f;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #f8fafc 60%, #f1f5f9 100%);
+  border-radius: 8px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 12px rgba(30, 41, 59, 0.07);
+  border-left: 1.5px solid #e2e8f0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.InfoWidget p:hover {
+  background: linear-gradient(90deg, #f1f5f9 60%, #e0e7ef 100%);
+  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.13);
+}
+
+.InfoWidget.reverse p {
+  border-radius: 8px;
+  border-left: none;
+  border-right: 1.5px solid #e2e8f0;
+}
+
+
+@media (max-width: 800px) {
+  .InfoWidget p {
+    font-size: 1rem;
+    padding: 24px 12px;
+  }
+  
+}

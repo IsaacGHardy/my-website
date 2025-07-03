@@ -1,0 +1,18 @@
+export {default as headshot} from './headshot.jpg';
+export {default as walkingPhoto } from './walkingPhoto.jpg';
+export {default as panera} from './panera.jpg';
+export {default as amazon} from './amazon.jpg';
+export {default as infoworks} from './infoworks.jpg';
+export {default as harding} from './harding.jpg';
+export {default as england} from './England.jpg';
+export {default as france} from './France.jpg';
+export {default as greece} from './Greece.jpg';
+export {default as italy} from './Italy.jpg';
+export {default as spain} from './Spain.jpg';
+export {default as peru} from './Peru.jpg';
+export {default as argentina } from './Argentina.jpg';
+export {default as church} from './church.jpg';
+export {default as boys} from './boys.jpg';
+export {default as hoops} from './hoops.jpg';
+export {default as warriors} from './warriors.jpg';
+export {default as vikings } from './vikings.jpg';
